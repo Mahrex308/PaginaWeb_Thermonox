@@ -1,0 +1,57 @@
+/*------------------Estilo para campo--------------------*/
+.campo-gris
+ {
+  color: #111111;
+  background-color: #f2f2f2;
+}
+
+.campo-input {
+    display: block;
+    width: 90%;
+    padding: 10px 12px;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 3px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    color: inherit;
+    height: auto;
+  }
+
+  input::-webkit-input-placeholder {
+    /* placeholder texto color */
+    color: #aab2bd;
+    /* placeholder texto tamaño */
+    font-size: 15px;
+}
+
+/*------------------Estilo para boton--------------------*/
+.boton{
+    pointer-events: auto;
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  border: 0 none transparent;
+  outline-width: 0;
+  background-color: transparent;
+  margin: 0;
+  -webkit-text-decoration-skip: objects;
+  font-style: initial;
+  white-space: nowrap;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 0;
+  align-self: flex-start;
+  color: #f7f5f5;
+  background-color: #f4b700f9;
+}
