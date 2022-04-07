@@ -172,6 +172,38 @@ body{
   border-radius: 6px;
 }
 
+/* Ventajas */
+
+.opcion{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.opcion_item{
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  /* border-right: 2px solid var(--black2); */
+}
+
+.opcion_copy{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.bxs-chevron-right{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #EA5A25;
+}
+
 /* Services */
 
 .services{
