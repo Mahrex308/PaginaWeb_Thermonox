@@ -172,6 +172,11 @@ body{
   border-radius: 6px;
 }
 
+/* Videos */
+.videos{
+  align-items: center;
+}
+
 /* Ventajas */
 
 .opcion{
