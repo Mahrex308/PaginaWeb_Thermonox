@@ -1,4 +1,10 @@
 /*------------------Estilo para campo--------------------*/
+td{
+  border:45px solid #ffffff;
+  border-collapse: collapse;
+}
+
+/*------------------Estilo para campo--------------------*/
 .campo-gris
  {
   color: #111111;
@@ -54,4 +60,9 @@
   align-self: flex-start;
   color: #f7f5f5;
   background-color: #f4b700f9;
+}
+
+.boton:hover{
+  color: #f6f1f1d0;
+  background-color: #f4b700b2;
 }
