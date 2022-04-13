@@ -14,9 +14,7 @@
     <script src="assets/js/contacto.js" type="text/javascript"></script>
 
     <script src="https://kit.fontawesome.com/5fb0beb110.js" crossorigin="anonymous"></script>
-    
-    <!-- script de contacto de php -->
-    <script src="contacto.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -42,69 +40,30 @@
     <center>
     <br><br><br>
 
-    <table width="80%">
-        <tr>
-             <td width="50%">
-                    <p><font size="7">COLABORACION</font></p>
-                    <br>
-                    <h2>Soporte técnico</h2>
-                    <p>Adaptamos nuestros servicios perfectamente a sus necesidades prácticas y 
-                        para cumplir las expectativas de los clientes lo mejor posible.
-                        <br><br>
-                        En conjunto con los tratamientos, nuestro servicio otorga un completo 
-                        asesoramiento técnico, valoramos especialmente el contacto directo con nuestros 
-                        clientes para adaptar nuestros servicios perfectamente a sus exigencias prácticas 
-                        y para cumplir las expectativas de los clientes lo mejor posible, así como el seguimiento post-servicio.
-                    </p>
-                    <br>
-                    <h2>Latinoamérica / Norteamérica</h2>
-                    <p>ThermoNox® GmbH es el exclusivo proveedor de tratamientos de calor para el sector alimentario y otros afines, 
-                        en Latinoamérica y Norteamérica, el servicio es proporcionado en colaboración con Grupo La Moderna de manera 
-                        profesional y especializada en la tecnología del tratamiento.
-                    </p>
-                    <br>
-                    <h2>Europa / Asia / África / Oceanía</h2>
-                    <p>Para informes de colaboración de ThermoNox® en éstas regiones, puede contactar con Thermonox Gobal: thermonox.
-                        de Nosotros alquilamos y vendemos equipos ThermoNox®. Adicionalmente ofrecemos un amplio asesoramiento técnico, 
-                        formación y seminarios.
-                    </p>
-                    <br><br><br><br><br><br><br><br><br><br>
-            </td>
-            <td width="90%" style="border-right-style:none" >
-                <ul>
-                    <form name="f_contac">
-                    <p><font size="7">CONTACTO</font></p>
-                    <br>
-                    <h2> <i class="fa-solid fa-building"></i> Oficina corporativa</h2>
-                    <p>Hauptstraße 1 85296 Fahlenbach</p>
-                    <br>
-                    <h2>Contacto directo</h2>
-                    <p><i class="fa-solid fa-phone"></i><b><font size="4">Telefono :</font></b>  +49 8442 8823</p>
-                    <p><i class="fa-solid fa-envelope"></i><b><font size="4">Correo :</font></b>  info@thermonox.de</p>
-                    <br>
-                    <h3>¿Necesita mayores informes o cotización?</h3>
-                    
-                    <input type="text" placeholder="Nombre" name="nom" class=" campo-gris campo-input campo-input-rectangle">
-                    <br>
-                    <input type="text" placeholder="Correo electronico" name="correo" class=" campo-gris campo-input campo-input-rectangle">
-                    <br>
-                    <input type="text" placeholder="Asunto" name="asunto" class=" campo-gris campo-input campo-input-rectangle">
-                    <br>
-                    <textarea placeholder="Introduce su mensaje" rows="4" cols="50" name="mensaje" class=" campo-gris campo-input campo-input-rectangle"></textarea>
-                    <br>
-                    <input type="text" placeholder="Ciudad/Colonia" name="ciudad" class=" campo-gris campo-input campo-input-rectangle">
-                    <br>
-                    <input type="text" placeholder="Codigo postal" name="c_postal" class=" campo-gris campo-input campo-input-rectangle">
-                    <br>
-                    <input type="text" placeholder="Pais" name="pais" class=" campo-gris campo-input campo-input-rectangle">
-                        <br><br>
-                    <input type="button" name="b_enviar" class="boton" value="Enviar" onclick="contactos()">
-                    </form>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <br>
+    <?php
+        function conecta(){
+            $cs=mysqli_connect("localhost","root","");
+            $cbd=mysqli_select_db($cs,"thermonox");
+            return $cs;
+        }
+
+        function msg(){
+            echo "<p>La informacion ha sido enviada</p>";	
+        }
+
+        global $nombre, $correo, $asunto, $mensaje, $ciudad, $codigo, $pais;
+        $nombre=$_GET['nombre'];
+        $correo=$_GET['correo'];
+        $asunto=$_GET['asunto'];
+        $mensaje=$_GET['mensaje'];
+        $ciudad=$_GET['ciudad'];
+        $codigo=$_GET['codigo'];
+        $pais=$_GET['pais'];
+        $cs = conecta();
+        $query = "INSERT INTO contactos VALUES ('$nombre','$correo','$asunto','$mensaje','$ciudad','$codigo','$pais')";
+        $sql=mysqli_query($cs,$query);
+		msg();
+    ?>
 </center>
 
 
