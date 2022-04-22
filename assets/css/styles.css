@@ -26,8 +26,8 @@ font & reset css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root{
-  --gold1: #F4BD76;
-  --gold2: #F6CD8F;
+  --gold1: #F49926; /*#F4BD76*/
+  --gold2: #EA5A25; /*#F6CD8F*/
 
   --gray: #ffffff80;
   --gary2: #f7d9d990;
@@ -63,7 +63,7 @@ body{
 
 .container{
   width: 90%;
-  max-width: 1200px;
+  max-width: 1200px; /*1200*/
   margin: 0 auto;
   overflow: hidden;
   padding: 100px 0;
@@ -101,20 +101,25 @@ body{
 .logo_img{
   object-fit: cover;
   width: 48;
-  max-height: 8vh;
+  max-height: 10vh;
+  padding: 8px 0;
 }
 
 .link{
   display: inline-block;
   color: inherit;
   text-decoration: none;
-  font-weight: 300; /* estaba en 300*/
+  font-weight: 500; /* estaba en 300*/
   padding: 10px; /*Estaba en 10px*/
+  /*
+  --webkit-transition: all .5%;
+  -o-transition: all .5%;
+  transition: all .5%; */
 }
 
 .link-active{
   color: var(--gold1);
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .point{
