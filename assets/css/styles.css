@@ -76,14 +76,14 @@ body{
 
 .hero{
   width: 100%;
-  min-height: 100vh;
+  min-height: 10vh;
   background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
 }
 
 .nav_hero{
   color: #fff;
   height: 70%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .nav_container{
@@ -178,8 +178,13 @@ body{
 }
 
 /* Videos */
+
 .videos{
   align-items: center;
+  display:flex;
+  padding: 10px 10px;
+  gap: 10px;
+  flex-grow: 1;
 }
 
 /* Ventajas */
@@ -637,6 +642,37 @@ body{
 .contact_title{
   font-size: 16px;
   line-height: 20px;
+}
+
+/*Text Thermonox & Thermonoxilo*/
+
+.container_Ther{
+  width: 90%;
+  max-width: 1200px; /*1200*/
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0;
+  height: auto;
+}
+
+.container-modifier_Ther{
+  width: 60%;
+}
+
+.section_pOne{
+  display: flex;
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.ther_img{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* Adaptar a mobile */
