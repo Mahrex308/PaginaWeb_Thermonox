@@ -83,7 +83,7 @@ body{
 .nav_hero{
   color: #fff;
   height: 70%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav_container{
@@ -181,7 +181,8 @@ body{
 
 .videos{
   align-items: center;
-  display:flex;
+  display: flex;
+  flex-direction: row;
   padding: 10px 10px;
   gap: 10px;
   flex-grow: 1;
@@ -675,9 +676,20 @@ body{
   object-position: center top;
 }
 
+
+
 /* Adaptar a mobile */
 
 @media screen and (max-width:900px){
+  .videos{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+  
   .mockup{
       width: 600px;
       height: auto;
@@ -755,6 +767,7 @@ body{
 }
 
 @media screen and (max-width:700px){
+  
   main .container,
   footer .container{
       padding: 60px 0;
@@ -870,6 +883,7 @@ body{
 }
 
 @media screen and (max-width:500px){
+
   .mockup{
       width: 80%;
       margin-bottom: 15px;
