@@ -8,7 +8,7 @@ function contactos(){
     codigo = document.f_contac.c_postal.value;
     pais = document.f_contac.pais.value;
     
-    body = "<h1><font color=orange>Nueva formulario</font></h1> <br/>" + "Nombre : " + nombre + "<br/> Email : " + correo  + "<br/> Mensaje : " + mensaje + "<br/> Ciudad : " + ciudad + "<br/> Codigo : " + codigo + "<br/> Pais : " + pais;
+    body = "<center><h1><font color=orange>Nueva formulario</font></h1></center> <br/>" + "<b>Nombre : </b>" + nombre + "<br/> <b>Email : </b>" + correo  + "<br/> <b>Mensaje : </b>" + mensaje + "<br/> <b>Ciudad : </b>" + ciudad + "<br/> <b>Codigo : </b>" + codigo + "<br/> <b>Pais : </b>" + pais;
 
     var sw = correo.indexOf("@", 0); 
     var sw1 = correo.indexOf(".", 0);
@@ -30,7 +30,7 @@ function contactos(){
                 alert("El correo tiene que llevar .")
                 document.f_contac.correo.style.border = "1px solid red";
                 } 
-            else document.f_contac.correo.style.border = "1px solid grenn";
+            else document.f_contac.correo.style.border = "1px solid green";
             
             if (tt == 1) { 
                 alert("@ y . no pueden estar junto");
@@ -42,7 +42,7 @@ function contactos(){
                 alert("@ tiene que estar enfrente de . ")
                 document.f_contac.correo.style.border = "1px solid red";
                 } 
-            else document.f_contac.correo.style.border = "1px solid red";
+            else document.f_contac.correo.style.border = "1px solid green";
 
         if (asunto=="") document.f_contac.asunto.style.border = "1px solid red";
             else document.f_contac.asunto.style.border = "1px solid green";
@@ -75,7 +75,7 @@ function contactos(){
             Host : "smtp.gmail.com",
             Username : "287434445cai@gmail.com",
             Password : "kqusuoalgoyejdqb",
-            To : '287434445cai@gmail.com',
+            To : ['287434445cai@gmail.com',correo],
             From :correo,
             Subject : asunto,
             Body : body
