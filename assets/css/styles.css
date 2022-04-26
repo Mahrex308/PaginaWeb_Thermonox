@@ -645,36 +645,8 @@ body{
   line-height: 20px;
 }
 
-/*Text Thermonox & Thermonoxilo*/
 
-.container_Ther{
-  width: 90%;
-  max-width: 1200px; /*1200*/
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 100px 0;
-  height: auto;
-}
-
-.container-modifier_Ther{
-  width: 60%;
-}
-
-.section_pOne{
-  display: flex;
-  text-align: justify;
-  width: 90%;
-  margin: 0 auto;
-  gap: 10px;
-}
-
-.ther_img{
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  object-fit: cover;
-  object-position: center top;
-}
+/* Thermonox */
 
 
 
