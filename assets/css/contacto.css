@@ -1,7 +1,29 @@
-/*------------------Estilo para campo--------------------*/
-td{
-  border:45px solid #ffffff;
-  border-collapse: collapse;
+
+
+/*------------------Estilo felx--------------------*/
+.flex-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  min-height: auto;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  flex-wrap: wrap;
+}
+
+.box{
+  flex-grow: 1;
+}
+
+.colaboracion{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contacto{
+  display: flex;
 }
 
 /*------------------Estilo para campo--------------------*/
@@ -13,7 +35,7 @@ td{
 
 .campo-input {
     display: block;
-    width: 90%;
+    width: 100%;
     padding: 10px 12px;
     background-clip: padding-box;
     border: none;

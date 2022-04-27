@@ -6,16 +6,15 @@ function contactos(){
     mensaje = document.f_contac.mensaje.value;
     ciudad = document.f_contac.ciudad.value;
     codigo = document.f_contac.c_postal.value;
-    pais = document.f_contac.pais.value;
     
-    body = "<center><h1><font color=orange>Nueva formulario</font></h1></center> <br/>" + "<b>Nombre : </b>" + nombre + "<br/> <b>Email : </b>" + correo  + "<br/> <b>Mensaje : </b>" + mensaje + "<br/> <b>Ciudad : </b>" + ciudad + "<br/> <b>Codigo : </b>" + codigo + "<br/> <b>Pais : </b>" + pais;
+    body = "<center><h1><font color=orange>Nueva formulario Thermonox</font></h1></center> <br/>" + "<b>Nombre : </b>" + nombre + "<br/> <b>Email : </b>" + correo  + "<br/> <b>Mensaje : </b>" + mensaje + "<br/> <b>Ciudad : </b>" + ciudad + "<br/> <b>Codigo : </b>" + codigo;
 
     var sw = correo.indexOf("@", 0); 
     var sw1 = correo.indexOf(".", 0);
     var tt = sw1 - sw; 
     
 
-    if ((nombre.length==0) || (correo.length==0) || (asunto.length==0) || (mensaje.length==0) || (ciudad.length==0) || (codigo.length==0) || (pais.length==0)){
+    if ((nombre.length==0) || (correo.length==0) || (asunto.length==0) || (mensaje.length==0) || (ciudad.length==0) || (codigo.length==0) ){
         alert("Error, todos los campos son obligatorios");
         if (nombre=="") document.f_contac.nom.style.border = "1px solid red";
             else document.f_contac.nom.style.border = "1px solid green";
@@ -52,14 +51,11 @@ function contactos(){
             else document.f_contac.ciudad.style.border = "1px solid green";
         if (codigo=="") document.f_contac.c_postal.style.border = "1px solid red";
             else document.f_contac.c_postal.style.border = "1px solid green";
-        if (pais=="") document.f_contac.pais.style.border = "1px solid red";
-            else document.f_contac.pais.style.border = "1px solid green";
-    
     }
 
     
     else{
-		//url="contacto.php?nombre="+nombre+"&correo="+correo+"&asunto="+asunto+"&mensaje="+mensaje+"&ciudad="+ciudad+"&codigo="+codigo+"&pais="+pais;
+		//url="contacto.php?nombre="+nombre+"&correo="+correo+"&asunto="+asunto+"&mensaje="+mensaje+"&ciudad="+ciudad+"&codigo="+codigo;
 		//location.href=url;
         //alert(url);
         document.f_contac.nom.style.border = "1px solid green";
@@ -68,14 +64,12 @@ function contactos(){
         document.f_contac.mensaje.style.border = "1px solid green";
         document.f_contac.ciudad.style.border = "1px solid green";
         document.f_contac.c_postal.style.border = "1px solid green";
-        document.f_contac.pais.style.border = "1px solid green";
 
         Email.send({
-            text : "quiero 5",
             Host : "smtp.gmail.com",
-            Username : "287434445cai@gmail.com",
-            Password : "kqusuoalgoyejdqb",
-            To : ['287434445cai@gmail.com',correo],
+            Username : "jorge.iturralde@lamoderna.com.mx",
+            Password : "----Contraseña aqui----",
+            To : ['jorge.iturralde@lamoderna.com.mx',correo],
             From :correo,
             Subject : asunto,
             Body : body
