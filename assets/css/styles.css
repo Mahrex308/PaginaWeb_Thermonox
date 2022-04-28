@@ -101,15 +101,35 @@ body{
 .logo_img{
   object-fit: cover;
   width: 48;
-  max-height: 10vh;
+  max-height: 11vh;
   padding: 8px 0;
+}
+
+.atex_logo{
+  filter: invert(1);
+  
+  object-fit: cover;
+  width: 48;
+  max-height: 8vh;
+  text-align: center;
+}
+
+.atex_txt{
+  color: white;
+  padding: 10px 0;
+}
+
+.atex_align{
+  text-align: center;
+  padding: 10px 0;
 }
 
 .link{
   display: inline-block;
   color: inherit;
   text-decoration: none;
-  font-weight: 500; /* estaba en 300*/
+  font-size:100%;
+  font-weight: 600; /* estaba en 300*/
   padding: 10px; /*Estaba en 10px*/
   /*
   --webkit-transition: all .5%;
@@ -645,9 +665,113 @@ body{
   line-height: 20px;
 }
 
+/* Boton email */
+.contact-email{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 55px;
+}
+
+.contact-email .item{
+  width: calc(50% - 20px);
+  height: 100px;
+  background-color: #222426;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.contact-email i{
+  display: block;
+  font-size: 40px;
+  line-height: 80px;
+  height: 70px;
+  color: #fafafa;
+}
+
+.contact-email .item:hover{
+  background-color: #ff9d00;
+}
+
+/* Menu Idiomas */
+.world_icon{
+}
+
+.idioma{
+  max-width: 1200px;
+  /* margin: auto; */ 
+  /* font-size: 20px;
+  font-weight: 100; */
+
+  font-size: large;
+  font-weight: 600; /* estaba en 300*/
+
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+
+.menu-horizontal > li > a{
+  display: blockpad;
+  padding: 15px 1px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+  background-color: var(--gold2);
+}
+
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+
+.menu-vertical li:hover{
+  background-color: black;
+}
+
+.menu-vertical li a{
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
 
 /* Thermonox */
+.titulos{
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+}
 
+.grid-container{
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  height: 98vh;
+  gap: 10px;
+}
+
+
+
+
+/* LoadPage */
 
 
 /* Adaptar a mobile */
