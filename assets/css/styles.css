@@ -110,7 +110,7 @@ body{
   
   object-fit: cover;
   width: 48;
-  max-height: 8vh;
+  max-height: 7vh;
   text-align: center;
 }
 
@@ -121,7 +121,7 @@ body{
 
 .atex_align{
   text-align: center;
-  padding: 10px 0;
+  padding: 40px 0;
 }
 
 .link{
@@ -698,6 +698,13 @@ body{
 
 /* Menu Idiomas */
 .world_icon{
+  display: inline-block;
+  width: 15px;
+  height: 5px;
+  text-align: center;
+  margin-right: 15px;
+  color: #fff;
+  font-size: 25px;
 }
 
 .idioma{
@@ -709,11 +716,16 @@ body{
   font-size: large;
   font-weight: 600; /* estaba en 300*/
 
+  text-align: center;
+
   margin-top: 2px;
   margin-bottom: 2px;
 }
 
 .menu-horizontal{
+  /* Este parte edita el borde de la caja del menu de idioma. */
+  border: 1px solid var(--gold1);
+
   list-style: none;
   display: flex;
   justify-content: right;
