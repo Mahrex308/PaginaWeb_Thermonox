@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pagina Web ThermoNox</title>
 
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
@@ -17,7 +18,10 @@
 
 <body>
     
+
     <header class="hero">
+        
+        
         <nav class="nav_hero">
             <div class="container nav_container">
                 <div class="logo">
@@ -26,21 +30,42 @@
                 </div>
 
                 <div class="links">
-                    <a href="#" class="link">Home</a>
+                    <a href="#" class="link">Inicio</a>
                     <a href="/Thermonox.html" class="link">ThermoNox</a>
                     <a href="/ThermoNoxilo.html" class="link">ThermoNoxilo</a>
                     <!-- <a href="#" class="link">Pag3</a> -->
-                    <a href="/contacto.html" class="link link-active">Contact</a>
+                    <a href="/contacto.html" class="link link-active">Contacto</a>
+                </div>
+
+                <div class="idioma">
+                    <ul class="menu-horizontal">
+                        
+                        <li>
+                            <i class='bx bx-world world_icon'></i>
+                            <a href="#">Idioma</a>
+                            <ul class="menu-vertical">
+                                <li><a href="/index.html">Español</a></li>
+                                <li><a href="/index_ing.html">Ingles</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
+            
         </nav>
 
         <section class="container hero_main">
             <div class="hero_textos">
-                <h1 class="title">Pest control, <span class="title_active"> heat only.</span></h1>
-                <p class="copy">100% <span class="copy_active">Pesticide free and effective</span></p>
+                <h1 class="title">Control de plagas, <span class="title_active"> solo con calor.</span></h1>
+                <p class="copy">100% <span class="copy_active">Libre de pesticidas y eficaz</span></p>
+                <div class="atex_align">
+                    <img src="/assets/images/ATEX-Logo.svg" class="atex_logo" alt="">
+                    <p class="atex_txt">ATEX-KONFORM</p>
+                </div>
                 <!-- <a href="#" class="cta">Agenda una demo</a> -->
             </div>
+            
             <img src="assets/images/imagen_ther.png" class="mockup">
         </section>
     </header>
@@ -141,8 +166,26 @@
             </div>
         </section>
 
-     
-            <section>
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer_caption">
+            <section class="download">
+                <h3 class="title_footer">Thermonox</h3>
+                <div class="download_app">
+                    <!--
+                    <div class="download_item">
+                        <i class='bx bxl-apple download_logo'></i>
+                        <h4 class="download_title">App Store</h4>
+                    </div>
+                    <div class="download_item">
+                        <i class='bx bxl-play-store download_logo'></i>
+                        <h4 class="download_title">Play Store</h4>
+                    </div> -->
+                </div>
+    
                 <div class="footer_copy">
                     <p class="copyright">Thermonox &copy; 2022 Todos los derechos reservados</p>
     
@@ -152,12 +195,32 @@
                 </div>
             </section>
 
+            <!--
             <section class="get-email">
                 <h3 class="title_footer">¿Quires colaborar con nosotros?</h3>
                 <form class="newsletter newsletter-modifier">
                     <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
                     <input type="submit" class="newsletter_submit" value="Enviar">
                 </form>
+                <div class="socialmedia">
+                    <p class="socialmedia_legend">Siguenos en:</p>
+                    <i class='socialmedia_icon bx bxl-facebook-circle'></i>
+                    <i class='socialmedia_icon bx bxl-linkedin-square'></i>
+                    <i class='socialmedia_icon bx bxl-twitter'></i>
+                    <i class='socialmedia_icon bx bxl-instagram'></i>
+                    <i class='socialmedia_icon bx bxl-github'></i>
+                </div>
+            </section>
+            -->
+
+            <section class="get-email">
+                <h3 class="title_footer">¿Quires colaborar con nosotros?</h3>
+                <div class="contact-email">
+                    <div class="item">
+                        <a href="#"><i class='bx bx-envelope'></i></a>
+                        Email
+                    </div>
+                </div>
             </section>
         </div>
 

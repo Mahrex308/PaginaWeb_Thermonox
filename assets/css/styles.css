@@ -610,7 +610,7 @@ body{
 }
 
 .get-email{
-  width: 50%;
+  width: 35%;
 }
 
 .socialmedia{
@@ -671,6 +671,7 @@ body{
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 55px;
+  
 }
 
 .contact-email .item{
@@ -693,7 +694,7 @@ body{
 }
 
 .contact-email .item:hover{
-  background-color: #ff9d00;
+  background-color: var(--gold1);
 }
 
 /* Menu Idiomas */
