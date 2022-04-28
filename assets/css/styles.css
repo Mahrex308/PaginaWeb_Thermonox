@@ -99,16 +99,20 @@ body{
 }
 
 .logo_img{
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 48;
   max-height: 11vh;
   padding: 8px 0;
 }
 
 .atex_logo{
-  filter: invert(1);
+  -webkit-filter: invert(1);
+          filter: invert(1);
   
-  object-fit: cover;
+  -o-object-fit: cover;
+  
+     object-fit: cover;
   width: 48;
   max-height: 7vh;
   text-align: center;
@@ -155,7 +159,8 @@ body{
 }
 
 .mockup{
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 48;
   max-height: 90vh;
 }
@@ -290,7 +295,8 @@ body{
   text-align: left;
   width: 95%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
 
@@ -358,7 +364,8 @@ body{
 .background_img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: inherit;
 }
 
@@ -395,8 +402,10 @@ body{
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  object-fit: cover;
-  object-position: center top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
 }
 
 .testimony_copy{
@@ -457,9 +466,11 @@ body{
 .logo-picture{
   width: 40px;
   height: 40px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
-  object-position: center top;
+  -o-object-position: center top;
+     object-position: center top;
 }
 
 /* Check */
@@ -703,6 +714,7 @@ body{
   width: 15px;
   height: 5px;
   text-align: center;
+  line-height: 10px;
   margin-right: 15px;
   color: #fff;
   font-size: 25px;
@@ -767,24 +779,88 @@ body{
 }
 
 /* Thermonox */
+
+.info{
+  max-height: 600px;
+  overflow: auto;
+  text-align: justify;
+}
+
+.texto{
+  padding: 10px 10px;
+  line-height: 1.8rem;
+}
+
 .titulos{
   font-size: 35px;
   font-weight: 600;
-  color: black;
+  color: var(--gold1);
+}
+
+.aplicaciones > ul{
+  margin: 0;
 }
 
 .grid-container{
+  padding: 0px 100px;
   display: grid;
   grid-template-columns: 0.3fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
-  height: 98vh;
+  /* grid-template-rows: repeat(12, 1fr); */
+  /* height: 98vh; */
   gap: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+
+}
+
+aside{
+  align-self: center;
+  text-align: center;
+  height: 600;
+  
+}
+
+.menu{
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.container_modifier{
+  display: flex;
+  flex-direction: column;
+}
+
+.container_modifier > a{
+  margin: 20px 0;
+}
+
+/*Esto de aqui*/
+
+
+/* A ACA*/
+
+.img_Ther{
+  width: 600px; 
+  height: 200px; 
+  object-fit: cover;
+  object-position: 20% 10%; 
+}
+
+/* Scroll bar Info */
+.info::-webkit-scrollbar {
+	width: 7px;
+}
+
+.info::-webkit-scrollbar-thumb {
+	background: #ff9d00;
+	border-radius: 5px;
 }
 
 
-
-
 /* LoadPage */
+/* Tal vez despues */
 
 
 /* Adaptar a mobile */
@@ -796,7 +872,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
   }
   
   .mockup{
