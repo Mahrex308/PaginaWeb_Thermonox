@@ -870,8 +870,10 @@ body{
   /* grid-template-rows: repeat(12, 1fr); */
   /* height: 98vh; */
   gap: 10px;
+  /*
   height: -webkit-max-content;
   height: -moz-max-content;
+  */
   height: max-content;
 
   
