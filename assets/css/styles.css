@@ -874,6 +874,8 @@ body{
   height: -moz-max-content;
   height: max-content;
 
+  grid-auto-rows: minmax(125px, auto);
+
 
 }
 
