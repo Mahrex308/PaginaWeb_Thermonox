@@ -867,14 +867,14 @@ body{
   padding: 0px 75px;
   display: grid;
   grid-template-columns: 0.3fr 1fr;
-  grid-template-rows: repeat(1, 1fr); 
-  height: 98vh; 
+  /* grid-template-rows: repeat(12, 1fr); */
+  /* height: 98vh; */
   gap: 10px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 
-
+  
 }
 
 aside{
