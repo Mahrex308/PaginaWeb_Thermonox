@@ -83,7 +83,7 @@ body{
 .nav_hero{
   color: #fff;
   height: 70%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.0);
 }
 
 .nav_container{
@@ -202,6 +202,12 @@ body{
   border-radius: 6px;
 }
 
+/*Contenido de video con puntos importantes*/
+.cont_container{
+  display: flex;
+  flex-direction: row;
+}
+
 /* Videos */
 
 .videos{
@@ -211,27 +217,68 @@ body{
   padding: 10px 10px;
   gap: 10px;
   flex-grow: 1;
+
 }
 
 /* Ventajas */
+.ventajas{
+  padding: 10px 100px;
+}
 
 .opcion{
   display: flex;
+  
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 0 auto;
+
+  flex-direction: row;
+
+  text-align: left;
+  
 }
+
+.uno {
+  padding-top: 15px;
+}
+
+.dos{
+  padding-top: 5px;
+}
+
+.tres{
+  padding-top: 30px;
+}
+
+.cuatro{
+  padding-top: 23px;
+}
+
+.cinco{
+  padding-top: 2px;
+}
+
+.seis{
+  padding-top: 22px;
+}
+
 
 .opcion_item{
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  text-align: justify;
+  padding-right: 10px;
+  
   display: flex;
   /* border-right: 2px solid var(--black2); */
+
+  border-left: solid 1px var(--gold1);
+  border-right: solid 1px var(--gold1);
 }
 
 .opcion_copy{
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .bxs-chevron-right{
@@ -239,10 +286,18 @@ body{
   width: 40px;
   height: 40px;
   text-align: center;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
   border-radius: 50%;
   font-size: 40px;
   color: #EA5A25;
+
+  font-size: 35px;
+
+  padding-top: 30px;
+  padding-right: 8px;
+
+  padding-left: 2px;
+
 }
 
 /* Services */
@@ -656,7 +711,7 @@ body{
 }
 
 .item_contact-gold{
-  background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+  background: linear-gradient(180deg, var(--gold2) 0%, var(--gold1) 100%);
   color: var(--black1);
 }
 
@@ -781,20 +836,27 @@ body{
 /* Thermonox */
 
 .info{
-  max-height: 600px;
+  max-height: 710px; /*710px*/
+  width: 1100px;
   overflow: auto;
   text-align: justify;
+  
 }
 
 .texto{
-  padding: 10px 10px;
+  padding: 50px 10px; /*50px 10px*/
   line-height: 1.8rem;
+  padding: 2px;
 }
 
 .titulos{
+  padding-top: 25px;
+  padding-bottom: 10px;
   font-size: 35px;
   font-weight: 600;
-  color: var(--gold1);
+  color: var(--gold2);
+
+  text-align: center;
 }
 
 .aplicaciones > ul{
@@ -802,7 +864,7 @@ body{
 }
 
 .grid-container{
-  padding: 0px 100px;
+  padding: 0px 75px;
   display: grid;
   grid-template-columns: 0.3fr 1fr;
   /* grid-template-rows: repeat(12, 1fr); */
@@ -811,21 +873,27 @@ body{
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-
 }
 
 aside{
   align-self: center;
   text-align: center;
-  height: 600;
-  
+  height: 710px;
+  width: 250px;
+
+  padding-top: 200px;
+
+  background: linear-gradient(180deg, var(--black1) 0%, var(--gold2) 15%, var(--gold1) 95%, white 100%);
 }
 
 .menu{
   text-decoration: none;
   font-size: larger;
   font-weight: 600;
+  color: white;
+  
 }
+
 
 .container_modifier{
   display: flex;
@@ -836,16 +904,26 @@ aside{
   margin: 20px 0;
 }
 
-/*Esto de aqui*/
+.listas_Ther{
+  margin: auto;
+  padding: 5px 60px;
+}
 
+.texto_mid{
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+}
 
-/* A ACA*/
+.txt{
+  padding: 5px;
+}
 
 .img_Ther{
-  width: 600px; 
-  height: 200px; 
+  width: 1090px; 
+  height: 220px; 
   object-fit: cover;
-  object-position: 20% 10%; 
+  object-position: 100% 25%; 
 }
 
 /* Scroll bar Info */
