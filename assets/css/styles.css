@@ -121,11 +121,14 @@ body{
 .atex_txt{
   color: white;
   padding: 10px 0;
+  font-size: 100%;
+  
 }
 
 .atex_align{
   text-align: center;
   padding: 40px 0;
+  
 }
 
 .link{
@@ -853,7 +856,7 @@ body{
 }
 
 .titulos{
-  padding-top: 25px;
+  padding-top: 50px;
   padding-bottom: 10px;
   font-size: 35px;
   font-weight: 600;
@@ -890,7 +893,7 @@ aside{
 
   padding-top: 200px;
 
-  background: linear-gradient(180deg, var(--black1) 0%, var(--gold2) 15%, var(--gold1) 95%, white 100%);
+  background: linear-gradient(180deg, var(--black1) 0%, var(--black2) 90%, pink 100%);
 }
 
 .menu{
@@ -973,7 +976,18 @@ aside{
     flex-grow: 1;
     flex-wrap: wrap;  
   }
+
+  .opcion{
+    flex-wrap: wrap;
+  }
+
+
+  .atex_logo{
+    width: 40;
+  }
+
   
+
   .mockup{
       width: 600px;
       height: auto;
