@@ -845,7 +845,9 @@ body{
 
 .info{
   max-height: 710px; /*710px*/
-  width: 1100px;
+  width: 100%;
+  
+  
   overflow: auto;
   text-align: justify;
   
@@ -872,7 +874,7 @@ body{
 }
 
 .grid-container{
-  padding: 0px 75px;
+  padding: 0px 55px;
   display: grid;
   grid-template-columns: 0.3fr 1fr;
   /* grid-template-rows: repeat(12, 1fr); */
@@ -883,7 +885,6 @@ body{
   height: -moz-max-content;
   
   height: max-content;
-
   
 }
 
@@ -891,19 +892,18 @@ aside{
   align-self: center;
   text-align: center;
   height: 710px;
-  width: 250px;
+  width: 200px;
 
   padding-top: 200px;
 
-  background: linear-gradient(180deg, var(--black1) 0%, var(--black2) 90%, pink 100%);
+  background: linear-gradient(180deg, var(--black1) 0%, var(--black2) 90%, white 100%);
 }
 
 .menu{
   text-decoration: none;
-  font-size: larger;
+  font-size: medium;
   font-weight: 600;
   color: white;
-  
 }
 
 
@@ -970,6 +970,9 @@ aside{
 
 @media screen and (max-width:900px){
 
+  aside{
+    display: none;
+  }
 
   .videos{
     display: flex;
