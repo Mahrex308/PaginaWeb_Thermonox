@@ -938,14 +938,15 @@ aside{
 }
 
 .img_Ther{
-  width: 1090px; 
+  width: 98%; 
   height: 220px; 
   object-fit: cover;
-  object-position: 100% 25%; 
+  object-position: 100% 25%;
+  
 }
 
 .img_TherXilo{
-  width: 1090px; 
+  width: 98%;  
   height: 220px; 
   object-fit: cover;
   object-position: 100% 25%; 
@@ -976,6 +977,11 @@ aside{
 
 @media screen and (max-width:900px){
   
+  .img_Ther{
+    width: 98%; 
+    height: 200px; 
+  }
+
   .txt{
     font-size: small;
   }
@@ -995,6 +1001,7 @@ aside{
   .grid-container{
     grid-template-columns: none;
     grid-template-rows: 12, 1fr;
+    padding: 0px 20px
   }
 
   .videos{
@@ -1097,6 +1104,11 @@ aside{
   main .container,
   footer .container{
       padding: 60px 0;
+  }
+
+  .img_Ther{
+    width: 98%; 
+    height: 150px; 
   }
 
   .nav_container{
@@ -1213,6 +1225,11 @@ aside{
   .tamaño_Videos{
     width: calc(560px/1.5);
     height: calc(315px/1.5);
+  }
+
+  .img_Ther{
+    width: 98%; 
+    height: 110px; 
   }
 
   .mockup{
