@@ -715,6 +715,8 @@ body{
   width: 25%;
   padding: 60px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
 }
 
@@ -735,8 +737,11 @@ body{
 }
 
 .contact_title{
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
+  color: #fafafa;
 }
 
 /* Boton email */
