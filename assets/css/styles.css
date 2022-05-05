@@ -627,6 +627,7 @@ body{
 .title_footer{
   font-size: 24px;
   margin-bottom: 32px;
+  color: var(--gold2);
 }
 
 .download{
