@@ -934,6 +934,7 @@ aside{
 
 .txt{
   padding: 5px;
+  font-size: medium;
 }
 
 .img_Ther{
@@ -974,9 +975,26 @@ aside{
 /* Adaptar a mobile */
 
 @media screen and (max-width:900px){
+  
+  .txt{
+    font-size: small;
+  }
+
+  .listas_Ther{
+    font-size: small;
+  }
+
+  .titulos{
+    font-size: 25px;
+  }
 
   aside{
     display: none;
+  }
+
+  .grid-container{
+    grid-template-columns: none;
+    grid-template-rows: 12, 1fr;
   }
 
   .videos{
