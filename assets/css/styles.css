@@ -966,10 +966,11 @@ aside{
 
 
 
-
 /* Adaptar a mobile */
 
 @media screen and (max-width:900px){
+
+
   .videos{
     display: flex;
     flex-direction: column;
