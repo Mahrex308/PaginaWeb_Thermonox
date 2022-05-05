@@ -216,14 +216,16 @@ body{
 .videos{
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   padding: 10px 300px;
-  gap: 10px;
   flex-grow: 1;
 
-  width: 1200px;
-  height: 350px;
-  
   text-align: center; 
+}
+
+.tamaño_Videos{
+  width: 560px;
+  height: 315px;
 }
 
 /* Ventajas */
@@ -967,14 +969,15 @@ aside{
 
 /* Adaptar a mobile */
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:900px){
   .videos{
     height: 95%;
     width: 95%;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    padding: 10px 0px;  
   }
 
   .opcion{
@@ -984,103 +987,6 @@ aside{
 
   .atex_logo{
     width: 40px;
-  }
-
-  
-
-  .mockup{
-      width: 600px;
-      height: auto;
-  }
-
-  .title{
-      font-size: 50px;
-  }
-
-  .copy{
-      font-size: 22px;
-  }
-
-  .cta{
-      padding: 15px 22px;
-  }
-
-  .container-cards{
-      justify-content: space-evenly;
-  }
-
-  .services .card{
-      width: 45%;
-  }
-
-  .background{
-      width: 52%;
-  }
-
-  .card{
-      width: 42%;
-  }
-
-  .testimony-container{
-      justify-content: space-evenly;
-  }
-
-  .testimony_card{
-      width: 45%;
-  }
-
-  .check_item{
-      width: 45%;
-      margin-bottom: 35px;
-  }
-
-  .newsletter{
-      width: 80%;
-  }
-
-  .download{
-      width: 100%;
-  }
-
-  .download_app{
-      justify-content: space-between;
-  }
-
-  .download_item{
-      width: 45%;
-  }
-
-  .get-email{
-      width: 100%;
-      margin-bottom: 40px;
-  }
-
-  .socialmedia_icon{
-      font-size: 18px;
-  }
-
-  .socialmedia_legend{
-      font-size: 18px;
-  }
-}
-
-@media screen and (max-width:900px){
-  .videos{
-    height: 95%;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-wrap: wrap;  
-  }
-
-  .opcion{
-    flex-wrap: wrap;
-  }
-
-
-  .atex_logo{
-    width: 40;
   }
 
   
@@ -1278,6 +1184,11 @@ aside{
 }
 
 @media screen and (max-width:500px){
+
+  .tamaño_Videos{
+    width: calc(560px/1.5);
+    height: calc(315px/1.5);
+  }
 
   .mockup{
       width: 80%;
