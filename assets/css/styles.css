@@ -986,11 +986,7 @@ aside{
 /* Adaptar a mobile */
 
 @media screen and (max-width:900px){
-  .info{
-    overflow: none;
-  }
-
-
+  
   .img_Ther{
     width: 98%; 
     height: 200px; 
