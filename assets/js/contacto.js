@@ -13,8 +13,7 @@ function contactos(){
     var sw1 = correo.indexOf(".", 0);
     var tt = sw1 - sw; 
     
-
-    if ((nombre.length==0) || (correo.length==0) || (asunto.length==0) || (mensaje.length==0) || (ciudad.length==0) || (codigo.length==0) ){
+    if ((nombre.length==0) || (correo.length==0) || (asunto.length==0) || (mensaje.length==0) || (ciudad.length==0) || (codigo.length==0) || (pais.length==0)){
         alert("Error, todos los campos son obligatorios");
         if (nombre=="") document.f_contac.nom.style.border = "1px solid red";
             else document.f_contac.nom.style.border = "1px solid green";
@@ -23,26 +22,25 @@ function contactos(){
                 alert("El correo tiene que llervar @") 
                 document.f_contac.correo.style.border = "1px solid red";
                 } 
-            else document.f_contac.correo.style.border = "1px solid green";
             
             if (correo.indexOf(".", 0) == -1) { 
                 alert("El correo tiene que llevar .")
                 document.f_contac.correo.style.border = "1px solid red";
                 } 
-            else document.f_contac.correo.style.border = "1px solid green";
             
             if (tt == 1) { 
                 alert("@ y . no pueden estar junto");
                 document.f_contac.correo.style.border = "1px solid red";
                 }
-            else document.f_contac.correo.style.border = "1px solid green";
             
             if (sw > sw1) { 
                 alert("@ tiene que estar enfrente de . ")
                 document.f_contac.correo.style.border = "1px solid red";
-                } 
-            else document.f_contac.correo.style.border = "1px solid green";
-
+                }
+            else{
+                document.f_contac.correo.style.border = "1px solid green";
+            } 
+       
         if (asunto=="") document.f_contac.asunto.style.border = "1px solid red";
             else document.f_contac.asunto.style.border = "1px solid green";
         if (mensaje=="") document.f_contac.mensaje.style.border = "1px solid red";
@@ -51,9 +49,10 @@ function contactos(){
             else document.f_contac.ciudad.style.border = "1px solid green";
         if (codigo=="") document.f_contac.c_postal.style.border = "1px solid red";
             else document.f_contac.c_postal.style.border = "1px solid green";
+        if (pais=="") document.f_contac.pais.style.border = "1px solid red";
+            else document.f_contac.pais.style.border = "1px solid green";
     }
 
-    
     else{
 		//url="contacto.php?nombre="+nombre+"&correo="+correo+"&asunto="+asunto+"&mensaje="+mensaje+"&ciudad="+ciudad+"&codigo="+codigo;
 		//location.href=url;
@@ -67,9 +66,9 @@ function contactos(){
 
         Email.send({
             Host : "smtp.gmail.com",
-            Username : "jorge.iturralde@lamoderna.com.mx",
+            Username : "correo aqui",
             Password : "----Contraseña aqui----",
-            To : ['jorge.iturralde@lamoderna.com.mx',correo],
+            To : ['correo aqui',correo],
             From :correo,
             Subject : asunto,
             Body : body
