@@ -66,8 +66,8 @@ function contactos(){
 
         Email.send({
             Host : "smtp.gmail.com",
-            Username : "correo aqui",
-            Password : "----Contraseña aqui----",
+            Username : "287434445cai@gmail.com",
+            Password : "kqusuoalgoyejdqb",
             To : ['correo aqui',correo],
             From :correo,
             Subject : asunto,
