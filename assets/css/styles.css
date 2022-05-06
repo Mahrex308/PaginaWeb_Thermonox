@@ -144,6 +144,7 @@ body{
   transition: all .5%; */
 }
 
+
 .link-active{
   color: var(--gold1);
   font-weight: 900;
@@ -671,6 +672,7 @@ body{
 
 .politica_privacidad{
   color: inherit;
+  color: var(--gold2);
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
@@ -911,6 +913,14 @@ aside{
   font-weight: 600;
   color: white;
 }
+
+
+.active, .menu:hover{
+  background-color: var(--gold2);
+  color: white;
+}
+
+
 
 
 .container_modifier{
