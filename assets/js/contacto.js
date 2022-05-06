@@ -68,7 +68,7 @@ function contactos(){
             Host : "smtp.gmail.com",
             Username : "287434445cai@gmail.com",
             Password : "kqusuoalgoyejdqb",
-            To : ['correo aqui',correo],
+            To : ['287434445cai@gmail.com',correo],
             From :correo,
             Subject : asunto,
             Body : body
